@@ -184,6 +184,7 @@
 - Xiaomi Redmi S2/Y2 (ysl)
 
 ### lk2nd-msm8974
+- Amazon Fire Phone - kodiak
 - BlackBerry Passport - wolverine
 - Fairphone 2 - FP2
 - HTC One M8 - m8

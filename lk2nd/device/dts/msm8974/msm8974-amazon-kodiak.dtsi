@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
+
+&lk2nd {
+	model = "Amazon Fire Phone";
+	compatible = "amazon,kodiak";
+
+	idme {
+		compatible = "amazon,idme";
+	};
+
+	gpio-keys {
+		compatible = "gpio-keys";
+		down {
+			lk2nd,code = <KEY_VOLUMEDOWN>;
+			gpios = <&pmic 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		};
+		up {
+			lk2nd,code = <KEY_VOLUMEUP>;
+			gpios = <&pmic 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		};
+	};
+};
