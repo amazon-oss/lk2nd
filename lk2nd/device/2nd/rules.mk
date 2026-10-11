@@ -7,6 +7,7 @@ MODULES += \
 	lk2nd/hw/i2c \
 
 OBJS += \
+	$(LOCAL_DIR)/amazon-idme.o \
 	$(LOCAL_DIR)/device.o \
 	$(LOCAL_DIR)/match.o \
 	$(LOCAL_DIR)/parse-cmdline.o \
